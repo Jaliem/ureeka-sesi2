@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -29,7 +30,7 @@ export function MainNav() {
           href="/"
           className="text-xl font-bold tracking-tighter transition-colors hover:text-teal-500 dark:hover:text-teal-400"
         >
-          Portfolio
+          Jaliem
         </Link>
 
         {/* Desktop Navigation */}
@@ -47,16 +48,17 @@ export function MainNav() {
               {item.name}
             </Link>
           ))}
-        </nav>
+        </nav>        <div className="flex items-center gap-4">
+          <ThemeToggle />
+          <Button variant="outline" size="sm" className="hidden md:flex">
+            Resume
+          </Button>
 
-        <Button variant="outline" size="sm" className="hidden md:flex">
-          Resume
-        </Button>
-
-        {/* Mobile Menu Button */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMobileMenu}>
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </Button>
+          {/* Mobile Menu Button */}
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMobileMenu}>
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </Button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}

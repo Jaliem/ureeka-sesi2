@@ -1,84 +1,24 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Github, Mail, User } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-100 to-white dark:from-zinc-900 dark:to-zinc-800">
-      {/* Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
-        <div className="container flex items-center justify-between h-16 px-4 mx-auto">
-          <Link
-            href="/"
-            className="text-xl font-bold tracking-tighter transition-colors hover:text-teal-500 dark:hover:text-teal-400"
-          >
-            Portfolio
-          </Link>
-          <nav className="hidden space-x-6 md:flex">
-            <Link
-              href="/about"
-              className="text-sm font-medium transition-colors hover:text-teal-500 dark:hover:text-teal-400"
-            >
-              About
-            </Link>
-            <Link
-              href="/projects"
-              className="text-sm font-medium transition-colors hover:text-teal-500 dark:hover:text-teal-400"
-            >
-              Projects
-            </Link>
-            <Link
-              href="#skills"
-              className="text-sm font-medium transition-colors hover:text-teal-500 dark:hover:text-teal-400"
-            >
-              Skills
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium transition-colors hover:text-teal-500 dark:hover:text-teal-400"
-            >
-              Contact
-            </Link>
-          </nav>
-          <Button variant="outline" size="sm" className="hidden md:flex">
-            Resume
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Button>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-6 h-6"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-          </Button>
-        </div>
-      </header>
+  return (    
+    <div className="bg-gradient-to-b from-zinc-100 to-white dark:from-zinc-900 dark:to-zinc-800">
 
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[calc(100vh-4rem)] overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
           <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
           <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
-        </div>
-        <div className="container relative z-10 px-4 mx-auto">
-          <div className="grid items-center gap-12 md:grid-cols-2">
-            <div className="flex flex-col space-y-6">
+        </div>        
+        <div className="container relative z-10 px-0 md:px-0 lg:px-0 mx-auto max-w-6xl">
+          <div className="grid items-center md:grid-cols-2">
+            <div className="flex flex-col space-y-6 px-6 md:px-8 lg:px-12">
               <div className="inline-block px-4 py-1 text-sm font-medium text-teal-500 bg-teal-100 rounded-full dark:bg-teal-900 dark:text-teal-300">
-                Hello, I'm a Creative Developer
+                Hello, my name is Jason
               </div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                 Crafting digital <span className="text-teal-500 dark:text-teal-400">experiences</span> that inspire
@@ -102,47 +42,12 @@ export default function Home() {
             <div className="relative flex items-center justify-center">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-zinc-800 shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/fotoaslab1.JPG?height=400&width=400"
                   alt="Profile"
                   fill
                   className="object-cover"
                   priority
                 />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-white dark:bg-zinc-800 rounded-full p-4 shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-8 h-8 text-teal-500"
-                >
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <div className="absolute -top-6 -left-6 bg-white dark:bg-zinc-800 rounded-full p-4 shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-8 h-8 text-purple-500"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                  <path d="M12 17h.01"></path>
-                </svg>
               </div>
             </div>
           </div>
@@ -170,8 +75,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Preview */}
-      <section className="py-20 bg-white dark:bg-zinc-900">
-        <div className="container px-4 mx-auto">
+      <section className="py-20 bg-white dark:bg-zinc-900">        <div className="container px-6 md:px-8 lg:px-12 mx-auto max-w-6xl">
           <div className="flex flex-col items-center mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Featured Projects</h2>
             <div className="w-16 h-1 mt-4 bg-purple-500 rounded"></div>
@@ -273,7 +177,7 @@ export default function Home() {
               <div className="absolute inset-0 transform translate-x-4 translate-y-4 bg-teal-500 rounded-lg"></div>
               <div className="relative h-full overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/fotoaslab1.JPG?height=600&width=800"
                   alt="About me"
                   width={800}
                   height={600}
@@ -295,15 +199,15 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-bold">Education</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">B.S. Computer Science</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">4th Semester of Computer Science at Binus University</p>
                 </div>
                 <div>
                   <h4 className="font-bold">Location</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">San Francisco, CA</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">Tangerang, Banten</p>
                 </div>
                 <div>
                   <h4 className="font-bold">Experience</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">5+ Years</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">2+ Years</p>
                 </div>
                 <div>
                   <h4 className="font-bold">Freelance</h4>
@@ -590,7 +494,7 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <h4 className="font-medium">Phone</h4>
-                    <p className="text-zinc-600 dark:text-zinc-400">+1 (123) 456-7890</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">+62 851 5650 6975</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -613,7 +517,7 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-zinc-600 dark:text-zinc-400">hello@example.com</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">jasonliem2005@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -636,7 +540,7 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <h4 className="font-medium">Location</h4>
-                    <p className="text-zinc-600 dark:text-zinc-400">San Francisco, CA</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">Tangerang, Banten</p>
                   </div>
                 </div>
               </div>
@@ -644,8 +548,10 @@ export default function Home() {
                 <h3 className="mb-4 text-xl font-bold">Follow Me</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/jaliem/"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-teal-100 dark:hover:bg-teal-900"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -665,32 +571,17 @@ export default function Home() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Jaliem"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-teal-100 dark:hover:bg-teal-900"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="w-5 h-5 text-teal-500 dark:text-teal-400"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-teal-100 dark:hover:bg-teal-900"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Github className="w-5 h-5 text-teal-500 dark:text-teal-400" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/jaliem_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-teal-100 dark:hover:bg-teal-900"
                   >
                     <svg
@@ -716,10 +607,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer>
-      </footer>
     </div>
   )
 }
