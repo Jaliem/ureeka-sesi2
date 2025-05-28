@@ -35,31 +35,31 @@ const projects = [
     tags: ["Next.js", "Firebase", "Tailwind", "Socket.io"],
     featured: true,
   },
-  {
-    id: "portfolio-website",
-    title: "Portfolio Website",
-    description: "A creative portfolio website for a photographer showcasing their work with a beautiful gallery.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["HTML", "CSS", "JavaScript", "GSAP"],
-    featured: false,
-  },
-  {
-    id: "task-management-app",
-    title: "Task Management App",
-    description:
-      "A productivity app for managing tasks, projects, and team collaboration with drag-and-drop functionality.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "Redux", "Node.js", "MongoDB"],
-    featured: false,
-  },
-  {
-    id: "weather-app",
-    title: "Weather App",
-    description: "A weather application that provides real-time weather data and forecasts for locations worldwide.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "OpenWeather API", "CSS Modules"],
-    featured: false,
-  },
+  // {
+  //   id: "portfolio-website",
+  //   title: "Portfolio Website",
+  //   description: "A creative portfolio website for a photographer showcasing their work with a beautiful gallery.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   tags: ["HTML", "CSS", "JavaScript", "GSAP"],
+  //   featured: false,
+  // },
+  // {
+  //   id: "task-management-app",
+  //   title: "Task Management App",
+  //   description:
+  //     "A productivity app for managing tasks, projects, and team collaboration with drag-and-drop functionality.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   tags: ["React", "Redux", "Node.js", "MongoDB"],
+  //   featured: false,
+  // },
+  // {
+  //   id: "weather-app",
+  //   title: "Weather App",
+  //   description: "A weather application that provides real-time weather data and forecasts for locations worldwide.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   tags: ["React", "OpenWeather API", "CSS Modules"],
+  //   featured: false,
+  // },
 ]
 
 export default function ProjectsPage() {

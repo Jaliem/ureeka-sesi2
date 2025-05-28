@@ -406,7 +406,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-zinc-100 dark:bg-zinc-800">
-        <div className="container px-4 mx-auto">
+        <div className="container px-4 mx-auto max-w-2xl">
           <div className="flex flex-col items-center mb-12 text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-teal-100 dark:bg-teal-900">
               <Mail className="w-6 h-6 text-teal-500 dark:text-teal-400" />
@@ -414,67 +414,12 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get In Touch</h2>
             <div className="w-16 h-1 mt-4 bg-teal-500 rounded"></div>
             <p className="max-w-lg mt-4 text-zinc-600 dark:text-zinc-400">
-              Have a project in mind or want to collaborate? Feel free to reach out and I'll get back to you as soon as
-              possible.
+              Have a project in mind or want to collaborate? Feel free to reach out through any of these channels.
             </p>
           </div>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-zinc-900">
-              <form className="space-y-4">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      type="text"
-                      placeholder="Your name"
-                      className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-800 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="Your email"
-                      className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-800 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
-                    Subject
-                  </label>
-                  <input
-                    id="subject"
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-800 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    placeholder="Your message"
-                    rows={5}
-                    className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-800 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                  ></textarea>
-                </div>
-                <Button className="w-full bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
-                  Send Message
-                </Button>
-              </form>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-zinc-900">
-              <h3 className="mb-4 text-xl font-bold">Contact Information</h3>
-              <div className="space-y-4">
+          <div className="flex justify-center">
+            <div className="w-full p-8 bg-white rounded-lg shadow-lg dark:bg-zinc-900">
+              <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 mt-1 rounded-full bg-teal-100 dark:bg-teal-900">
                     <svg
@@ -544,9 +489,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="mt-8">
+              <div className="mt-8 text-center">
                 <h3 className="mb-4 text-xl font-bold">Follow Me</h3>
-                <div className="flex space-x-4">
+                <div className="flex justify-center space-x-4">
                   <a
                     href="https://www.linkedin.com/in/jaliem/"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-teal-100 dark:hover:bg-teal-900"
