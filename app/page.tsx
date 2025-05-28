@@ -189,7 +189,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold">My Journey</h3>
               <p className="text-zinc-600 dark:text-zinc-400">
                 I'm a passionate web developer with a background in design, bringing a unique perspective to every
-                project. With over 5 years of experience, I've worked on a variety of projects from small business
+                project. With over 2 years of experience, I've worked on a variety of projects from small business
                 websites to complex web applications.
               </p>
               <p className="text-zinc-600 dark:text-zinc-400">
@@ -214,9 +214,9 @@ export default function Home() {
                   <p className="text-zinc-600 dark:text-zinc-400">Available</p>
                 </div>
               </div>
-              <Button className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
+              {/* <Button className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
                 Download Resume
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

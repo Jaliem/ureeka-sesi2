@@ -50,9 +50,9 @@ export function MainNav() {
           ))}
         </nav>        <div className="flex items-center gap-4">
           <ThemeToggle />
-          <Button variant="outline" size="sm" className="hidden md:flex">
+          {/* <Button variant="outline" size="sm" className="hidden md:flex">
             Resume
-          </Button>
+          </Button> */}
 
           {/* Mobile Menu Button */}
           <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMobileMenu}>

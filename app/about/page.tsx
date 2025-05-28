@@ -25,7 +25,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 transform translate-x-4 translate-y-4 bg-teal-500 rounded-lg"></div>
               <div className="relative h-full overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/fotoaslab1.JPG?height=600&width=800"
                   alt="About me"
                   width={800}
                   height={600}
@@ -37,7 +37,7 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold">My Journey</h2>
               <p className="text-zinc-600 dark:text-zinc-400">
                 I'm a passionate web developer with a background in design, bringing a unique perspective to every
-                project. With over 5 years of experience, I've worked on a variety of projects from small business
+                project. With over 2 years of experience, I've worked on a variety of projects from small business
                 websites to complex web applications.
               </p>
               <p className="text-zinc-600 dark:text-zinc-400">
@@ -47,24 +47,24 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-bold">Education</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">B.S. Computer Science</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">4th Semester of Computer Science at Binus University</p>
                 </div>
                 <div>
                   <h4 className="font-bold">Location</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">San Francisco, CA</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">Tangerang, Banten</p>
                 </div>
                 <div>
                   <h4 className="font-bold">Experience</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">5+ Years</p>
+                  <p className="text-zinc-600 dark:text-zinc-400">2+ Years</p>
                 </div>
                 <div>
                   <h4 className="font-bold">Freelance</h4>
                   <p className="text-zinc-600 dark:text-zinc-400">Available</p>
                 </div>
               </div>
-              <Button className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
+              {/* <Button className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
                 Download Resume
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -82,11 +82,9 @@ export default function AboutPage() {
               <div className="absolute -left-3 mt-1 w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center">
                 <span className="text-white text-xs font-bold">1</span>
               </div>
-              <h3 className="text-xl font-bold">Early Beginnings</h3>
+              <h3 className="text-xl font-bold">Getting Started</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                I started my journey in tech at a young age, tinkering with computers and building simple websites. My
-                curiosity led me to pursue a degree in Computer Science, where I developed a strong foundation in
-                programming principles and software development.
+                My interest in tech began in high school, where I enjoyed exploring how websites and apps worked. This curiosity led me to pursue a Computer Science degree, and in my early semesters, I focused on learning programming basics and building simple projects using HTML, CSS, and Python.
               </p>
             </div>
 
@@ -94,11 +92,9 @@ export default function AboutPage() {
               <div className="absolute -left-3 mt-1 w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center">
                 <span className="text-white text-xs font-bold">2</span>
               </div>
-              <h3 className="text-xl font-bold">Professional Growth</h3>
+              <h3 className="text-xl font-bold">Building Skills</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                After graduating, I joined a tech startup where I had the opportunity to work on diverse projects and
-                wear multiple hats. This experience was invaluable as it allowed me to develop skills across the full
-                stack and understand the business side of technology.
+                By the 4th semester, I had started working on more complex academic projects and group assignments. This helped me improve my teamwork, problem-solving, and coding abilities in languages like Java and C. I also began learning about databases and version control using Git.
               </p>
             </div>
 
@@ -106,11 +102,9 @@ export default function AboutPage() {
               <div className="absolute -left-3 mt-1 w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center">
                 <span className="text-white text-xs font-bold">3</span>
               </div>
-              <h3 className="text-xl font-bold">Design Integration</h3>
+              <h3 className="text-xl font-bold">Exploring Design</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                Recognizing the importance of user experience, I pursued additional training in UI/UX design. This dual
-                expertise in development and design has become my unique selling point, allowing me to create solutions
-                that are both technically sound and aesthetically pleasing.
+                Alongside coding, I started exploring UI/UX design through online courses and redesigning some of my projects with a better focus on usability. Understanding how users interact with software has added a new dimension to how I think about development.
               </p>
             </div>
 
@@ -118,11 +112,9 @@ export default function AboutPage() {
               <div className="absolute -left-3 mt-1 w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center">
                 <span className="text-white text-xs font-bold">4</span>
               </div>
-              <h3 className="text-xl font-bold">Present Day</h3>
+              <h3 className="text-xl font-bold">Current Goals</h3>
               <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                Today, I work as a freelance developer and consultant, helping businesses and individuals bring their
-                digital ideas to life. I'm passionate about creating accessible, responsive, and performant web
-                applications that provide exceptional user experiences.
+                Currently, I'm focused on improving my portfolio, contributing to open-source projects, and preparing for internships. I'm passionate about building applications that solve real problems and hope to gain more hands-on experience in web and software development.
               </p>
             </div>
           </div>
