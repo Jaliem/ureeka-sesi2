@@ -92,31 +92,19 @@ export default function SkillsPage() {
                   <path d="M12 7v10" />
                 </svg>
               </div>
-              <h3 className="mb-4 text-xl font-bold">Backend Development</h3>
+              <h3 className="mb-4 text-xl font-bold">Database</h3>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
                     <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "85%" }}></div>
                   </div>
-                  <span className="ml-2 text-sm font-medium">Node.js</span>
+                  <span className="ml-2 text-sm font-medium">MySQL</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
                     <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "80%" }}></div>
                   </div>
-                  <span className="ml-2 text-sm font-medium">Express</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
-                    <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "75%" }}></div>
-                  </div>
-                  <span className="ml-2 text-sm font-medium">MongoDB</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
-                    <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "70%" }}></div>
-                  </div>
-                  <span className="ml-2 text-sm font-medium">PostgreSQL</span>
+                  <span className="ml-2 text-sm font-medium">SQL Server</span>
                 </li>
               </ul>
             </div>
@@ -178,7 +166,7 @@ export default function SkillsPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-4">Languages</h3>
                   <div className="flex flex-wrap gap-3">
-                    {["JavaScript", "TypeScript", "HTML", "CSS", "SQL", "Python", "PHP"].map((lang) => (
+                    {["JavaScript", "TypeScript", "HTML", "CSS", "SQL", "Python"].map((lang) => (
                       <span key={lang} className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-sm">
                         {lang}
                       </span>
@@ -192,13 +180,8 @@ export default function SkillsPage() {
                     {[
                       "React",
                       "Next.js",
-                      "Vue.js",
-                      "Express",
                       "Tailwind CSS",
                       "Bootstrap",
-                      "Material UI",
-                      "Redux",
-                      "React Query",
                     ].map((framework) => (
                       <span key={framework} className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-sm">
                         {framework}
@@ -210,7 +193,7 @@ export default function SkillsPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-4">Tools & Platforms</h3>
                   <div className="flex flex-wrap gap-3">
-                    {["Git", "GitHub", "VS Code", "Docker", "AWS", "Vercel", "Netlify", "Firebase", "Heroku"].map(
+                    {["Git", "GitHub", "VS Code", "Vercel"].map(
                       (tool) => (
                         <span key={tool} className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-sm">
                           {tool}
@@ -227,12 +210,10 @@ export default function SkillsPage() {
                   <div className="flex flex-wrap gap-3">
                     {[
                       "Figma",
-                      "Adobe XD",
                       "Photoshop",
                       "Illustrator",
                       "UI/UX Design",
                       "Responsive Design",
-                      "Wireframing",
                       "Prototyping",
                     ].map((design) => (
                       <span key={design} className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-sm">
@@ -245,7 +226,7 @@ export default function SkillsPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-4">Databases</h3>
                   <div className="flex flex-wrap gap-3">
-                    {["MongoDB", "PostgreSQL", "MySQL", "Firebase Firestore", "Redis", "Supabase"].map((db) => (
+                    {["MySQL", "SQL Server"].map((db) => (
                       <span key={db} className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-sm">
                         {db}
                       </span>

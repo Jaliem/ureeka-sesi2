@@ -12,122 +12,96 @@ export const metadata = {
 // Project data
 const projects = [
   {
-    id: "e-commerce-platform",
-    title: "E-Commerce Platform",
+    id: "healnclinic",
+    title: "Heal n Clinic",
     description:
-      "A modern e-commerce platform built with Next.js, featuring product listings, cart functionality, and secure checkout.",
+      "A modern company profile website for a dentist clinic built with Next.js, showcasing services, client testimonials, and articles with responsive design.",
     longDescription:
-      "This e-commerce platform was built to provide a seamless shopping experience for users. It features a responsive design, product filtering, user authentication, shopping cart functionality, and integration with Stripe for secure payments. The admin dashboard allows for easy product management and order tracking.",
+      "This project is a company profile website for a dentist clinic, designed to provide information about the clinic's services, client testimonials, and articles related to dental health. The website is built using Next.js for server-side rendering and API routes, React for the frontend UI, and Tailwind CSS for styling. It features a responsive design that works well on both desktop and mobile devices.",
     image: "/placeholder.svg?height=600&width=1200",
     tags: ["Next.js", "React", "Tailwind", "Stripe"],
     features: [
       "Responsive design for all devices",
-      "Product search and filtering",
-      "User authentication and profiles",
-      "Shopping cart and wishlist",
-      "Secure checkout with Stripe",
-      "Order tracking and history",
-      "Admin dashboard for product management",
+      "Service listings with detailed descriptions",
+      "Client testimonials section",
+      "Blog articles on dental health",
+      "SEO-friendly structure",
     ],
     technologies: [
-      "Next.js for server-side rendering and API routes",
       "React for the frontend UI",
       "Tailwind CSS for styling",
-      "Stripe for payment processing",
-      "MongoDB for database storage",
-      "NextAuth.js for authentication",
     ],
     github: "https://github.com",
-    liveDemo: "https://example.com",
-    year: 2023,
+    liveDemo: "https://healnclinic.vercel.app/",
+    year: 2025,
   },
   {
-    id: "dashboard-ui",
-    title: "Dashboard UI",
+    id: "valopedia",
+    title: "Valopedia",
     description: "A responsive admin dashboard with data visualization, user management, and real-time analytics.",
     longDescription:
-      "This dashboard UI was designed to provide administrators with a comprehensive overview of their business data. It features interactive charts and graphs for data visualization, user management tools, and real-time analytics. The dashboard is fully responsive and includes dark mode support.",
+      "This project is a comprehensive admin dashboard designed for managing user data and visualizing analytics. It includes features such as user management, real-time data updates, customizable widgets, and responsive design. The dashboard is built with React and TypeScript, utilizing Chart.js for data visualization and Tailwind CSS for styling.",
     image: "/placeholder.svg?height=600&width=1200",
     tags: ["React", "TypeScript", "Chart.js", "Tailwind"],
     features: [
-      "Interactive data visualization",
-      "User management interface",
-      "Real-time analytics",
-      "Customizable widgets",
-      "Dark mode support",
-      "Responsive design",
-      "Data export functionality",
+      "Service Catalog",
+      "Order System",
+      "Responsive Design",
     ],
     technologies: [
       "React for the frontend UI",
-      "TypeScript for type safety",
-      "Chart.js for data visualization",
       "Tailwind CSS for styling",
-      "React Query for data fetching",
-      "Context API for state management",
     ],
     github: "https://github.com",
-    liveDemo: "https://example.com",
-    year: 2023,
+    liveDemo: "https://valopedia.net/",
+    year: 2025,
   },
   {
-    id: "social-media-app",
-    title: "Social Media App",
-    description: "A social networking application with real-time messaging, post sharing, and user profiles.",
+    id: "vuperautopets",
+    title: "Vuper Auto Pets",
+    description: "A clone of the popular game Super Auto Pets, built with HTML, CSS, and JavaScript.",
     longDescription:
-      "This social media application was built to connect users through shared interests and real-time communication. It features user profiles, post creation and sharing, real-time messaging, notifications, and friend connections. The app is built with a focus on performance and user experience.",
+      "This project is a clone of the popular game Super Auto Pets, created as part of a Software Laboratory Assistant project. It focuses on replicating the game's user interface and basic functionality using HTML, CSS, and JavaScript. The game features a simple drag-and-drop mechanic for placing pets and battling against opponents.",
     image: "/placeholder.svg?height=600&width=1200",
-    tags: ["Next.js", "Firebase", "Tailwind", "Socket.io"],
+    tags: ["HTML", "CSS", "JavaScript"],
     features: [
-      "User profiles and authentication",
-      "Post creation and sharing",
-      "Real-time messaging",
-      "Friend connections",
-      "Notifications",
-      "Image and video uploads",
-      "Comment and reaction system",
+      "Simple animations and transitions",
+      "User-friendly interface",
+      "Game state management using local storage",
+      "Sound effects",
     ],
     technologies: [
-      "Next.js for the frontend and API routes",
-      "Firebase for authentication and storage",
-      "Tailwind CSS for styling",
-      "Socket.io for real-time communication",
-      "Firestore for database",
-      "React Hook Form for form handling",
+      "HTML for structure",
+      "CSS for styling",
+      "JavaScript for interactivity",
+      "Local Storage for saving game state",
     ],
     github: "https://github.com",
-    liveDemo: "https://example.com",
-    year: 2022,
+    liveDemo: "https://vuperautopets.vercel.app/",
+    year: 2024,
   },
-  // {
-  //   id: "portfolio-website",
-  //   title: "Portfolio Website",
-  //   description: "A creative portfolio website for a photographer showcasing their work with a beautiful gallery.",
-  //   longDescription:
-  //     "This portfolio website was designed for a professional photographer to showcase their work in a visually appealing way. It features a responsive image gallery, smooth animations, contact form, and about section. The design focuses on highlighting the photographer's work while providing a seamless user experience.",
-  //   image: "/placeholder.svg?height=600&width=1200",
-  //   tags: ["HTML", "CSS", "JavaScript", "GSAP"],
-  //   features: [
-  //     "Responsive image gallery",
-  //     "Smooth page transitions",
-  //     "Contact form",
-  //     "About section",
-  //     "Service information",
-  //     "Testimonials",
-  //     "Social media integration",
-  //   ],
-  //   technologies: [
-  //     "HTML for structure",
-  //     "CSS for styling",
-  //     "JavaScript for interactivity",
-  //     "GSAP for animations",
-  //     "FormSubmit for contact form handling",
-  //     "Lightbox for image gallery",
-  //   ],
-  //   github: "https://github.com",
-  //   liveDemo: "https://example.com",
-  //   year: 2022,
-  // },
+  {
+    id: "kreatifyagency",
+    title: "Kreatify Agency",
+    description:
+      "A modern company profile website for a marketing and web development agency built with Next.js, showcasing services, client testimonials, and articles with responsive design.",
+    longDescription:
+      "This project is a company profile website for a marketing and web development agency, designed to showcase the agency's services, client testimonials, and articles related to digital marketing. The website is built using Next.js for server-side rendering and API routes, React for the frontend UI, and Tailwind CSS for styling. It features a responsive design that works well on both desktop and mobile devices.",
+    image: "/placeholder.svg?height=600&width=1200",
+    tags: ["Next.js", "React", "Tailwind"],
+    features: [
+      "Responsive design for all devices",
+      "Service listings with detailed descriptions",
+      "SEO-friendly structure",
+    ],
+    technologies: [
+      "React for the frontend UI",
+      "Tailwind CSS for styling",
+    ],
+    github: "https://github.com",
+    liveDemo: "https://kreatifyagency.vercel.app/",
+    year: 2025,
+  },
   // {
   //   id: "task-management-app",
   //   title: "Task Management App",
@@ -239,12 +213,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     Live Demo
                   </a>
                 </Button>
-                <Button asChild variant="outline">
+                {/* <Button asChild variant="outline">
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4 mr-2" />
                     View Code
                   </a>
-                </Button>
+                </Button> */}
               </div>
 
               <div className="mb-6">
@@ -260,11 +234,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   </div>
                   <div>
                     <h3 className="font-medium text-zinc-500 dark:text-zinc-400">Role</h3>
-                    <p>Full Stack Developer</p>
+                    <p>Front End Developer</p>
                   </div>
                   <div>
                     <h3 className="font-medium text-zinc-500 dark:text-zinc-400">Duration</h3>
-                    <p>3 months</p>
+                    <p>1 Month</p>
                   </div>
                 </div>
               </div>

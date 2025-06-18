@@ -18,65 +18,10 @@ export default function ContactPage() {
               Have a project in mind or want to collaborate? Feel free to reach out and I'll get back to you as soon as
               possible.
             </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
+          </div>          
+          <div className="max-w-xl mx-auto">
             <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-zinc-800">
-              <form className="space-y-4">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      type="text"
-                      placeholder="Your name"
-                      className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-700 dark:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="Your email"
-                      className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-700 dark:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
-                    Subject
-                  </label>
-                  <input
-                    id="subject"
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-700 dark:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    placeholder="Your message"
-                    rows={5}
-                    className="w-full px-3 py-2 border rounded-lg dark:bg-zinc-700 dark:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                  ></textarea>
-                </div>
-                <Button className="w-full bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
-                  Send Message
-                </Button>
-              </form>
-            </div>
-
-            <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-zinc-800">
-              <h2 className="mb-6 text-2xl font-bold">Contact Information</h2>
+              <h2 className="mb-6 text-2xl font-bold text-center">Contact Information</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 mt-1 rounded-full bg-teal-100 dark:bg-teal-900">
@@ -84,7 +29,7 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-medium">Phone</h3>
-                    <p className="text-zinc-600 dark:text-zinc-400">+1 (123) 456-7890</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">+62 851 5650 6975</p>
                   </div>
                 </div>
 
@@ -94,7 +39,7 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-zinc-600 dark:text-zinc-400">hello@example.com</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">jasonliem2005@gmail.com</p>
                   </div>
                 </div>
 
@@ -104,25 +49,7 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-medium">Location</h3>
-                    <p className="text-zinc-600 dark:text-zinc-400">San Francisco, CA</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <h3 className="mb-4 text-xl font-bold">Working Hours</h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-zinc-600 dark:text-zinc-400">Monday - Friday</span>
-                    <span>9:00 AM - 5:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-zinc-600 dark:text-zinc-400">Saturday</span>
-                    <span>10:00 AM - 2:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-zinc-600 dark:text-zinc-400">Sunday</span>
-                    <span>Closed</span>
+                    <p className="text-zinc-600 dark:text-zinc-400">Tangerang, Indonesia</p>
                   </div>
                 </div>
               </div>
@@ -131,7 +58,7 @@ export default function ContactPage() {
                 <h3 className="mb-4 text-xl font-bold">Follow Me</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/jaliem/"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-700 hover:bg-teal-100 dark:hover:bg-teal-900"
                     aria-label="LinkedIn"
                   >
@@ -153,27 +80,7 @@ export default function ContactPage() {
                     </svg>
                   </a>
                   <a
-                    href="#"
-                    className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-700 hover:bg-teal-100 dark:hover:bg-teal-900"
-                    aria-label="Twitter"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="w-5 h-5 text-teal-500 dark:text-teal-400"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
+                    href="https://github.com/Jaliem"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-700 hover:bg-teal-100 dark:hover:bg-teal-900"
                     aria-label="GitHub"
                   >
@@ -194,7 +101,7 @@ export default function ContactPage() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/jaliem_/"
                     className="p-2 transition-colors rounded-full bg-zinc-100 dark:bg-zinc-700 hover:bg-teal-100 dark:hover:bg-teal-900"
                     aria-label="Instagram"
                   >

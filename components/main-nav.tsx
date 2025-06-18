@@ -51,7 +51,9 @@ export function MainNav() {
         </nav>        <div className="flex items-center gap-4">
           <ThemeToggle />
           <Button variant="outline" size="sm" className="hidden md:flex">
-            Resume
+              <Link href="/Jason_CV_Academy2026.pdf" target="_blank" rel="noopener noreferrer">
+                  Resume
+              </Link>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -81,7 +83,9 @@ export function MainNav() {
             ))}
             <div className="px-3 py-2">
               <Button variant="outline" size="sm" className="w-full">
-                Resume
+                <Link href="/Jason_CV_Academy2026.pdf" target="_blank" rel="noopener noreferrer">
+                  Resume
+              </Link>
               </Button>
             </div>
           </div>

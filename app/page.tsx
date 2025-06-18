@@ -96,13 +96,12 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-6">
-                <h3 className="mb-2 text-xl font-bold">E-Commerce Platform</h3>
+                <h3 className="mb-2 text-xl font-bold">Heal n Clinic</h3>
                 <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-                  A modern e-commerce platform built with Next.js, featuring product listings, cart functionality, and
-                  secure checkout.
+                  Developed a modern company profile website for a dentist clinic using Next.js, showcasing services, client testimonials and articles with responsive design.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <Link href="/projects/e-commerce-platform">View Project</Link>
+                  <Link href="https://healnclinic.vercel.app/">View Project</Link>
                 </Button>
               </div>
             </div>
@@ -119,12 +118,12 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-6">
-                <h3 className="mb-2 text-xl font-bold">Dashboard UI</h3>
+                <h3 className="mb-2 text-xl font-bold">Valopedia</h3>
                 <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-                  A responsive admin dashboard with data visualization, user management, and real-time analytics.
+                  Developed a website that allows customers to order Valorant boosting and coaching services, featuring order forms, service listings, and responsive design.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <Link href="/projects/dashboard-ui">View Project</Link>
+                  <Link href="https://valopedia.net/">View Project</Link>
                 </Button>
               </div>
             </div>
@@ -141,12 +140,12 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-6">
-                <h3 className="mb-2 text-xl font-bold">Social Media App</h3>
+                <h3 className="mb-2 text-xl font-bold">Vuper Auto Pets</h3>
                 <p className="mb-4 text-zinc-600 dark:text-zinc-400">
-                  A social networking application with real-time messaging, post sharing, and user profiles.
+                  Created a Super Auto Pets clone with HTML, CSS, and JavaScript for a Software Laboratory Assistant project, focusing on user interface.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <Link href="/projects/social-media-app">View Project</Link>
+                  <Link href="https://healnclinic.vercel.app/">View Project</Link>
                 </Button>
               </div>
             </div>
@@ -213,9 +212,10 @@ export default function Home() {
                   <h4 className="font-bold">Freelance</h4>
                   <p className="text-zinc-600 dark:text-zinc-400">Available</p>
                 </div>
-              </div>
-              <Button className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
-                Download Resume
+              </div>              <Button asChild className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
+                <Link href="/Jason_CV_Academy2026.pdf" target="_blank" rel="noopener noreferrer">
+                  Download Resume
+                </Link>
               </Button>
             </div>
           </div>
@@ -323,31 +323,19 @@ export default function Home() {
                   <path d="M12 7v10" />
                 </svg>
               </div>
-              <h3 className="mb-4 text-xl font-bold">Backend Development</h3>
+              <h3 className="mb-4 text-xl font-bold">Database</h3>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
                     <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "85%" }}></div>
                   </div>
-                  <span className="ml-2 text-sm font-medium">Node.js</span>
+                  <span className="ml-2 text-sm font-medium">MySQL</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
                     <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "80%" }}></div>
                   </div>
-                  <span className="ml-2 text-sm font-medium">Express</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
-                    <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "75%" }}></div>
-                  </div>
-                  <span className="ml-2 text-sm font-medium">MongoDB</span>
-                </li>
-                <li className="flex items-center">
-                  <div className="w-full bg-zinc-200 rounded-full h-2.5 dark:bg-zinc-700">
-                    <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: "70%" }}></div>
-                  </div>
-                  <span className="ml-2 text-sm font-medium">PostgreSQL</span>
+                  <span className="ml-2 text-sm font-medium">SQL Server</span>
                 </li>
               </ul>
             </div>
@@ -485,7 +473,7 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <h4 className="font-medium">Location</h4>
-                    <p className="text-zinc-600 dark:text-zinc-400">Tangerang, Banten</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">Tangerang, Indonesia</p>
                   </div>
                 </div>
               </div>

@@ -11,39 +11,44 @@ export const metadata = {
 // Project data
 const projects = [
   {
-    id: "e-commerce-platform",
-    title: "E-Commerce Platform",
+    id: "healnclinic",
+    title: "Heal n Clinic",
     description:
-      "A modern e-commerce platform built with Next.js, featuring product listings, cart functionality, and secure checkout.",
+      "Developed a modern company profile website for a dentist clinic using Next.js, showcasing services, client testimonials and articles with responsive design.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "React", "Tailwind", "Stripe"],
+    demoUrl: "https://healnclinic.vercel.app/",
+    tags: ["Next.js", "React", "Tailwind"],
+    featured: true,
+  },
+  {    
+    id: "valopedia",
+    title: "Valopedia",
+    description: "Developed a website that allows customers to order Valorant boosting and coaching services, featuring order forms, service listings, and responsive design.",
+    image: "/placeholder.svg?height=400&width=600",
+    demoUrl: "https://valopedia.net/",
+    tags: ["React", "JavaScript", "Tailwind"],
     featured: true,
   },
   {
-    id: "dashboard-ui",
-    title: "Dashboard UI",
-    description: "A responsive admin dashboard with data visualization, user management, and real-time analytics.",
+    id: "vuperautopets",
+    title: "Vuper Auto Pets",
+    description: "Created a Super Auto Pets clone with HTML, CSS, and JavaScript for a Software Laboratory Assistant project, focusing on user interface.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "TypeScript", "Chart.js", "Tailwind"],
+    demoUrl: "https://vuperautopets.vercel.app/",
+    githubUrl: "https://github.com/Jaliem/vuperautopets",
+    tags: ["HTML", "CSS", "JavaScript"],
     featured: true,
   },
   {
-    id: "social-media-app",
-    title: "Social Media App",
-    description: "A social networking application with real-time messaging, post sharing, and user profiles.",
+    id: "kreatifyagency",
+    title: "Kreatify Agency",
+    description: "Developed a modern company profile website for a marketing and web development agency using Next.js, showcasing services with responsive design.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "Firebase", "Tailwind", "Socket.io"],
-    featured: true,
+    demoUrl: "https://kreatifyagency.vercel.app/",
+    tags: ["Next.js", "React", "Tailwind"],
+    featured: false,
   },
-  // {
-  //   id: "portfolio-website",
-  //   title: "Portfolio Website",
-  //   description: "A creative portfolio website for a photographer showcasing their work with a beautiful gallery.",
-  //   image: "/placeholder.svg?height=400&width=600",
-  //   tags: ["HTML", "CSS", "JavaScript", "GSAP"],
-  //   featured: false,
-  // },
-  // {
+  //{
   //   id: "task-management-app",
   //   title: "Task Management App",
   //   description:
@@ -89,16 +94,23 @@ export default function ProjectsPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="flex gap-2">
-                      <Button size="sm" variant="secondary" className="rounded-full">
-                        <Github className="w-4 h-4 mr-1" />
-                        Code
-                      </Button>
-                      <Button size="sm" variant="secondary" className="rounded-full">
-                        <ExternalLink className="w-4 h-4 mr-1" />
-                        Demo
-                      </Button>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">                  <div className="flex gap-2">
+                      {project.githubUrl && (
+                        <Button asChild size="sm" variant="secondary" className="rounded-full">
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4 mr-1" />
+                            Code
+                          </a>
+                        </Button>
+                      )}
+                      {project.demoUrl && (
+                        <Button asChild size="sm" variant="secondary" className="rounded-full">
+                          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-4 h-4 mr-1" />
+                            Demo
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>

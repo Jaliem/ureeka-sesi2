@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export const metadata = {
@@ -25,7 +26,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 transform translate-x-4 translate-y-4 bg-teal-500 rounded-lg"></div>
               <div className="relative h-full overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/fotoaslab1.JPG?height=600&width=800"
                   alt="About me"
                   width={800}
                   height={600}
@@ -62,8 +63,10 @@ export default function AboutPage() {
                   <p className="text-zinc-600 dark:text-zinc-400">Available</p>
                 </div>
               </div>
-              <Button className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
-                Download Resume
+              <Button asChild className="self-start bg-teal-500 hover:bg-teal-600 dark:bg-teal-600 dark:hover:bg-teal-700">
+                <Link href="/Jason_CV_Academy2026.pdf" target="_blank" rel="noopener noreferrer">
+                  Download Resume
+                </Link>
               </Button>
             </div>
           </div>
